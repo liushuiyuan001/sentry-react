@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   
-  const methodDoesNotExist = () => {
+  const notExist = () => {
     console.log(this.a)
   }
   return (
@@ -22,7 +22,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <button onClick={methodDoesNotExist}>Break the world</button>
+      <button onClick={notExist}>Break the world</button>
     </div>
   );
 }
